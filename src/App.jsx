@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL  = "https://hfkdmbgovepofguvjkgd.supabase.co";
+const SUPABASE_URL  = "https://hfklmbgovepofguvjkgd.supabase.co";
 const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhma2xtYmdvdmVwb2ZndXZqa2dkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQwMzgwNzEsImV4cCI6MjA4OTYxNDA3MX0.vX4epLTcfVOT9KzoX3AoH7kAP_S-t6UM39vMIMDFM0k";
 
 // FIX 1: single `sb` client — original code mixed `sb` and `supabase` (undefined) causing ReferenceError
